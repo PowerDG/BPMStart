@@ -86,7 +86,7 @@ next节点仍未原下一节点
 - [ ] CountersignPassed	会签通过
 - [ ] CountersignNotPassed	会签不通过
 - [ ] GetFlowTrail	获取单据的流程轨迹（包含流转日志及待办任务）。
-- [ ] AssignApprover	指派审批人
+- [ ] AssignApprover	指派审批人【1】
 - [ ] SubsitititeForApproval	代审
 - [ ] Sign	签字确认
 
