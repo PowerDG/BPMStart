@@ -1,5 +1,19 @@
 # 流程领域
 
+
+
+![1567676352291](1567676352291.png)
+
+
+
+#### 是否存稿SaveDraft/直接发布Submit
+
+#### 是否启用BPM/下一步骤
+
+#### 是否需确认/直接生效
+
+
+
 ## 引擎事件
 
 ### 预启动	
@@ -60,13 +74,13 @@ public override void ApproverFlowNotPassed(long? billID, AssetDbContext dbContex
 
 
 
-
-
 ### 流转阶段操作
 
 
 
 ## 流转指定
+
+ApprovalFlow
 
 ##### 发起人主管	
 
