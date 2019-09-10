@@ -1,0 +1,12 @@
+ProgrammerLife.Utility.WebAPI.APIException
+  HResult=0x80131500
+  Message=URL为/的请求未路由到匹配的APIHander，服务器端无法处理请求.
+  Source=Utility.WebAPI
+  StackTrace:
+   at ProgrammerLife.Utility.WebAPI.ErrorEntryExtensionMethods.Throw(ErrorEntry pCaller) 
+			in D:\CProject\CProject\QB_Infrastructure\Utility.WebAPI\ErrorEntryExtensionMethods.cs:line 32
+   at ProgrammerLife.Utility.WebAPI.RESTful.Routing.APIRouter.Route(APIContext pContext) 
+			in D:\CProject\CProject\QB_Infrastructure\Utility.WebAPI\RESTful\Routing\APIRouter.cs:line 77
+   at ProgrammerLife.Utility.WebAPI.Middleware.APIRoutingMiddleware.InvokeAsync(HttpContext pContext, RequestDelegate pNext) 
+			in D:\CProject\CProject\QB_Infrastructure\Utility.WebAPI\Middleware\APIRoutingMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
