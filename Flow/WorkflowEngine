@@ -132,19 +132,53 @@ next节点仍未原下一节点
 
 ## 手动编写部分
 
+- [ ] Submit	单据状态变更；提交成功后，识别单据是否有匹配的审批流，如果有，则单据绑定流程，并告诉前端需要单据需要审批流。
+
+- [ ] GetByID	如果单据已经进入审批流，则增加判断当前用户是否为审批人、流程信息、单据的审批流程是否流转失败。
 
 
-- [x] GetByID	如果单据已经进入审批流，则增加判断当前用户是否为审批人、流程信息、单据的审批流程是否流转失败。
-- [x] Submit	单据状态变更；提交成功后，识别单据是否有匹配的审批流，如果有，则单据绑定流程，并告诉前端需要单据需要审批流。
-- [x] PreStartFlow	预启动流程。返回第一个审批节点及其候选审批人
-- [x] StartFlow	启动审批流
-- [x] PrevApproval	预审批。获取当前审批节点的属性及下一步审批的候选审批人。
-- [x] GetFlowTrail	获取单据的流程轨迹（包含流转日志及待办任务）。
-- [x] AssignApprover	指派审批人【1】
-- [x] SubsitititeForApproval	代审
-- [x] Sign	签字确认
+
+- [ ] PreStartFlow	预启动流程。返回第一个审批节点及其候选审批人
+
+- [ ] StartFlow	启动审批流
+
+- [ ] PrevApproval	预审批。获取当前审批节点的属性及下一步审批的候选审批人。
+
+- [ ] GetFlowTrail	获取单据的流程轨迹（包含流转日志及待办任务）。
+
+- [ ] AssignApprover	指派审批人【1】
+
+- [ ] SubsitititeForApproval	代审
+
+- [ ] Sign	签字确认
 
 
+
+
+
+​    public partial class AssetBorrowBillEntity : BaseApprovalBillEntity
+
+ BaseAuditedEntity<long?,int?>
+
+BaseBillApprovalTaskEntity
+
+
+
+ BaseAuditedEntity<long?,int?>
+
+BaseBillApprovalTaskUserEntity
+
+
+
+BaseAuditedEntity<long?,int?>
+
+BaseBillApprovalTaskLogEntity
+
+近阶段需要实现 的功能模块	
+
+采用的技术栈EF/ADO / Dapper
+
+小组/全技术团队规模 后端前端 测试 运维 产品
 
 ## 集成实现部分
 
