@@ -1,0 +1,26 @@
+```csharp
+if (pRequest.Data.IsSubmit.Value)
+            {
+                if (isNeedSign.Equals("True"))//开启签字
+                {
+                    entity.Status = (int?)BillStatuses.WaitingSign;
+                }
+                else
+                {
+                    entity.Status = (int?)BillStatuses.Confirm;
+                    entity.SignDatetime = Clock.Now;
+                }
+            }
+            else
+            {
+                if (enableDraft.Equals("True"))
+                {
+                    entity.Status = (int?)BillStatuses.Draft;
+                }
+                else
+                {
+                    entity.Status = (int?)BillStatuses.Confirm;
+                    entity.SignDatetime = Clock.Now;
+                }
+            }
+```
