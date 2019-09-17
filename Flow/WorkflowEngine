@@ -134,8 +134,7 @@ next节点仍未原下一节点
 
 
 
-SaveDraft
-
+- [ ] SaveDraft
 
 
 - [ ] Submit	单据状态变更；提交成功后，识别单据是否有匹配的审批流，如果有，则单据绑定流程，并告诉前端需要单据需要审批流。
@@ -169,17 +168,25 @@ SaveDraft
 
 BaseBillApprovalTaskEntity
 
+using C8.Service.Consumable.Model.Entity.BillApproval;
+
+
+
 
 
  BaseAuditedEntity<long?,int?>
 
 BaseBillApprovalTaskUserEntity
 
+using C8.Service.Consumable.Model.Entity.BillApproval;
+
 
 
 BaseAuditedEntity<long?,int?>
 
 BaseBillApprovalTaskLogEntity
+
+using C8.Service.Consumable.Model.Entity.BillApproval;
 
 近阶段需要实现 的功能模块	
 
