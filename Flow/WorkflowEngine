@@ -164,7 +164,11 @@ next节点仍未原下一节点
 
 ​    public partial class AssetBorrowBillEntity : BaseApprovalBillEntity
 
+
+
  BaseAuditedEntity<long?,int?>
+
+
 
 BaseBillApprovalTaskEntity
 
