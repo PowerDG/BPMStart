@@ -1,0 +1,35 @@
+https://blog.csdn.net/ttz_csdn/article/details/81490950
+
+
+
+namespace C8.Service.Asset.API.Module.Bill.Borrow.SaveDraft
+
+# VS2017更改快捷键，Ctrl+/ 添加注释 ，Ctrl + Shift + / 取消注释
+
+2018年08月08日 00:27:25[ttz_csdn](https://me.csdn.net/ttz_csdn)阅读数 7870
+
+  分类专栏：                 [                                             VS2017设置                                        ](https://blog.csdn.net/ttz_csdn/article/category/7916709)                                                                                                 
+
+​                                     
+
+​                 [                     ](http://creativecommons.org/licenses/by-sa/4.0/)             版权声明：本文为博主原创文章，遵循[ CC 4.0 BY-SA ](http://creativecommons.org/licenses/by-sa/4.0/)版权协议，转载请附上原文出处链接和本声明。                                      本文链接：https://blog.csdn.net/ttz_csdn/article/details/81490950                              
+
+VS2017 中的默认快捷键中
+
+- **“添加注释” ：Ctrl + K ，Ctrl + C**
+- **“取消注释” ：Ctrl + K ，Ctrl + U**
+
+这样按两次快捷键在使用VS2017编写代码时明显不太实用，很多用过其他IDE的同学可能更加习惯 Ctrl + /  以及Ctrl + Shift + / 这样的组合来添加/取消注释
+
+------
+
+废话少说开始设置：
+
+1. 工具 -> 选项 -> 环境 -> 键盘  
+     ![这里写图片描述](20180808001947689.png)
+
+    在 “显示命令包含” 中输入 “注释” 搜索获得相关的命令，图中标黄的两条命令就是需要修改的命令。
+
+    选择 “编辑 注释选定内容” 在下方红线处 点击 “按快捷键” 编辑框，按下 “Ctrl + / ” 再点击分配 即可完成快捷键的修改。同理设置 “编辑 取消注释选定内容” 命令的快捷键。
+
+    设置完成后点击确定即可完成设置。
