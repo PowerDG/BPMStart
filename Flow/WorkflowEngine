@@ -1,3 +1,5 @@
+
+
 # 流程领域
 
 
@@ -26,11 +28,11 @@
 
 ### 启动
 
-##### StartFlow_Successed
+##### StartFlow_Successed	首次发起流程时
 
 ##### StartFlow_Failed
 
-##### RunFlow_Successed
+##### RunFlow_Successed	流程节点中转
 
 ##### RunFlow_Failed
 
@@ -64,6 +66,43 @@ public override void ApproverFlowNotPassed(long? billID, AssetDbContext dbContex
     
 }
 ```
+
+​    
+
+##### 修改Entity所继承基类
+
+public partial class AssetBorrowBillEntity : BaseApprovalBillEntity
+
+
+
+ BaseAuditedEntity<long?,int?>
+
+
+
+BaseBillApprovalTaskEntity
+
+using C8.Service.Consumable.Model.Entity.BillApproval;
+
+
+
+
+
+ BaseAuditedEntity<long?,int?>
+
+BaseBillApprovalTaskUserEntity
+
+using C8.Service.Consumable.Model.Entity.BillApproval;
+
+
+
+BaseAuditedEntity<long?,int?>
+
+BaseBillApprovalTaskLogEntity
+
+using C8.Service.Consumable.Model.Entity.BillApproval;
+
+
+
 
 
 ## 流程启动
@@ -162,35 +201,7 @@ next节点仍未原下一节点
 
 
 
-​    public partial class AssetBorrowBillEntity : BaseApprovalBillEntity
 
-
-
- BaseAuditedEntity<long?,int?>
-
-
-
-BaseBillApprovalTaskEntity
-
-using C8.Service.Consumable.Model.Entity.BillApproval;
-
-
-
-
-
- BaseAuditedEntity<long?,int?>
-
-BaseBillApprovalTaskUserEntity
-
-using C8.Service.Consumable.Model.Entity.BillApproval;
-
-
-
-BaseAuditedEntity<long?,int?>
-
-BaseBillApprovalTaskLogEntity
-
-using C8.Service.Consumable.Model.Entity.BillApproval;
 
 近阶段需要实现 的功能模块	
 
